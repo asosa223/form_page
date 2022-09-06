@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,53 +8,61 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Form page</title>
 </head>
+
 <body>
     <div class="wrapper">
-            <div id="background-picture">
-                <div class="banner-title">
-                    TITLE
-                </div>
+        <div id="background-picture">
+            <div class="banner-title">
+                <img src="#" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                    <path
+                        d="M10.6 35.95V19h3v16.95Zm12.1 0V19h3v16.95Zm-18.7 6v-3h40v3Zm30.4-6V19h3v16.95ZM4 16v-2.65l20-11.4 20 11.4V16Zm6.7-3h26.6Zm0 0h26.6L24 5.4Z" />
+                    </svg>
+                <p id="title">PEOPLES BANK</p>
             </div>
+        </div>
         <div class="form-column-right">
             <div class="form-info">
-                This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.<br><br>
-                You <em>know</em> you want to.
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p><br><br>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form-column-center">
                 <div id="form-title-text">Lets do this!</div>
-            <div class="form">                
-                <div class="form-left">
-                <form>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                <div class="form">
+                    <div class="form-left">
+                        <form id="bank-form" action="#" method="get">
+                            <label for="fname">*First name:</label><br>
+                            <input tabindex="1" type="text" id="fname" name="fname" maxlength="20" required><br>
 
-                    <label for="phone">Phone:</label><br>
-                    <input type="number" id="phone" name="phone"><br>
+                            <label for="phone">Phone:</label><br>
+                            <input tabindex="3" type="tel" id="phone" name="phone" placeholder="555-555-5555"
+                                maxlength="12"><br>
 
-                    <label for="password">Password:</label><br>
-                    <input type="text" id="password" name="password"><br>
-                </div>
-                <div class="form-right">
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+                            <label for="password">*Password:</label><br>
+                            <input tabindex="5" type="password" id="password" name="password" required><br>
+                    </div>
+                    <div class="form-right">
+                        <label for="lname">*Last name:</label><br>
+                        <input tabindex="2" type="text" id="lname" name="lname" maxlength="20" required><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
+                        <label for="email">*Email:</label><br>
+                        <input tabindex="4" type="email" id="email" name="email" required><br>
 
-                    <label for="confirm-password">Confirm Password</label><br>
-                    <input type="text" id="confirm-password" name="confirm-password"><br>
-                </form>
+                        <label for="confirm-password">*Confirm Password</label><br>
+                        <input tabindex="6" type="password" id="confirm-password" name="confirm-password" required><br>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="form-button">
-                <button type="button">Create Account</button>
+                <button class="submit" type="submit">Create Account</button>
                 <div id="account-login">Already have an account? <a href="#">Log in</a></div>
             </div>
+            </form>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
