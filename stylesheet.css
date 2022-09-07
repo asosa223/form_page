@@ -119,3 +119,8 @@ div#form-title-text {
     transform: translateY(4px);
     box-shadow: none;
 }
+
+div#account-login a:link {
+    text-decoration: none;
+    color: blue;
+}

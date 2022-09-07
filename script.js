@@ -8,8 +8,10 @@ const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
 
 form.addEventListener('submit', (e) => {
-    //prevents the form from submitting
-    e.preventDefault();
+    //prevents the form from
+    //e.preventDefault();
+
+    alert('form submitted');
 })
 
 
